@@ -10,7 +10,7 @@ use pocketmine\item\VanillaItems;
 use pocketmine\player\Player;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\utils\TextFormat as MG;
+use pocketmine\utils\TextFormat as MG;                                                      
 use pocketmine\Server;
 use pocketmine\plugin\Plugin;
 use pocketmine\item\Item;
@@ -23,11 +23,12 @@ class HubCommand extends Command
 
     public function __construct()
     {
-        parent::__construct("hub", "hub command", null, ["spawn", "lobby"]);
+        parent::__construct("hub", "Teleport you to the server spawn!", null, ["hub", "lobby"]);
         $this->setPermission("lobbycore.command.hub");
     }
 
-    public function execute(CommandSender $player, string $label, array $args) : void {
+    public function execute(CommandSender $player, string $label, array $args)
+    {
         if (!$player instanceof Player)return;
         
         $this->plugin = LobbyCore::getInstance();
