@@ -81,16 +81,16 @@ class EventListener implements Listener
         $player = $event->getPlayer();
         $itn = $player->getInventory()->getItemInHand()->getCustomName();
         if ($itn == "§r§bCosmetics") {
-            LobbyCore::getInstance()->getUI()->getCosmeticsUI($player);
+            LobbyCore::getInstance()->getCosmeticsUI($player);
         }
         if ($itn == "§r§cReport Player"){
             $this->plugin->getServer()->getCommandMap()->dispatch($player, "report");
         }
         if ($itn == "§r§aTeleporter") {
-            LobbyCore::getInstance()->getUI()->getGamesUI($player);
+            LobbyCore::getInstance()->getGamesUI($player);
         }
         if ($itn == "§r§bINFO§fUI") {
-            LobbyCore::getInstance()->getUI()->getInfoUI($player);
+            LobbyCore::getInstance()->getInfoUI($player);
         }
         if ($itn == "§r§5Lobby"){
             $this->plugin->getServer()->getCommandMap()->dispatch($player, "hub");
