@@ -21,14 +21,12 @@ class HubCommand extends Command
 {
     private $plugin;
 
-    public function __construct()
-    {
+    public function __construct(): void {
         parent::__construct("hub", "hub command", null, ["spawn", "lobby"]);
         $this->setPermission("lobbycore.command.hub");
     }
 
-    public function execute(CommandSender $player, string $label, array $args)
-    {
+    public function execute(CommandSender $player, string $label, array $args) : void {
         if (!$player instanceof Player)return;
         
         $this->plugin = LobbyCore::getInstance();
