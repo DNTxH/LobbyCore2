@@ -10,22 +10,9 @@ Join-Message: "§8[§b+§8]§b{player}"
 
 Quit-Message: "§8[§c-§8]§c{player}"
 
-# Personalize your tip for items
-
-Games-Item: "Games"
-
-Cosmetics-Item: "Cosmetics"
-
-Info-Item: "Info"
-
 #Permissions Message Confjg
 
 NotPermissions: "§cYou do not have permissions to use"
-
-#Hub Nessages Config
-
-Hub-Message: "Volvistes al lobby {player}"
-Hub-Title: "Joined Lobby"
 
 #Menu Games Command Config
 
