@@ -8,7 +8,7 @@ use pocketmine\Server;
 use pocketmine\utils\SingletonTrait;
 use pocketmine\utils\TextFormat as MG;
 
-use Forms\FormAPI\SimpleForm;
+use Vecnavium\FormsUI\SimpleForm;
 
 use LC\LobbyCore;
 
