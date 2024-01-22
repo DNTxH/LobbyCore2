@@ -24,9 +24,9 @@ class GamesUI {
     }
 
     public function getGamesUI(Player $player){
-        $form = new SimpleForm(function(Player $player, int $data = null){
-            if($data === null){
-                return true;
+        $form = new SimpleForm(function (Player $player, int $data = null) {
+			if ($data === null) {
+				return true;
             }
             switch($data){
                 case 0:
