@@ -58,6 +58,6 @@ class GamesUI {
         $form->addButton(MG::RED . $this->plugin->getConfig()->get("GameForm5"));
         $form->addButton(MG::RED . $this->plugin->getConfig()->get("GameForm6"));
         $form->addButton(MG::RED . "Cerrar");
-        $form->sendToPlayer($player);
+        $player->sendForm($form);
     }
 }
