@@ -52,7 +52,7 @@ class CosmeticsUI
         $form->addButton(MG::RED . $this->plugin->getConfig()->get("CosmeticForm1"));
         $form->addButton(MG::RED . $this->plugin->getConfig()->get("CosmeticForm2"));
         $form->addButton(MG::RED . "Cerrar");
-        $form->sendToPlayer($player);
+        $player->sendForm($form);
     }
 
     public function FlyForm(Player $player){
@@ -80,7 +80,7 @@ class CosmeticsUI
         $form->addButton(MG::GREEN . $this->plugin->getConfig()->get("FlyForm1"));
         $form->addButton(MG::RED . $this->plugin->getConfig()->get("FlyForm2"));
         $form->addButton(MG::RED . "Cerrar");
-        $form->sendToPlayer($player);
+        $player->sendForm($form);
     }
 
     public function SizeForm(Player $player){
@@ -112,6 +112,6 @@ class CosmeticsUI
         $form->addButton(MG::GREEN . $this->plugin->getConfig()->get("SizeForm2"));
         $form->addButton(MG::GREEN . $this->plugin->getConfig()->get("SizeForm3"));
         $form->addButton(MG::RED . "Cerrar");
-        $form->sendToPlayer($player);
+        $player->sendForm($form);
     }
 }
