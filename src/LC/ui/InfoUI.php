@@ -38,6 +38,6 @@ class InfoUI
         $form->setTitle(MG::BLUE . $this->plugin->getConfig()->get("InfoTitle"));
         $form->setContent(MG::RED . $this->plugin->getConfig()->get("Info"));
         $form->addButton(MG::RED . "Cerrar");
-        $form->sendToPlayer($player);
+        $player->sendForm($form);
     }
 }
