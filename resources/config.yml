@@ -14,6 +14,9 @@ Quit-Message: "§8[§c-§8]§c{player}"
 
 NotPermissions: "§cYou do not have permissions to use"
 
+#Hub Nessages Config
+
+Hub-Message: "Volvistes al lobby {player}"
 #Menu Games Command Config
 
 CommandForm1: "sw join"
