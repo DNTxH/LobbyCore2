@@ -35,6 +35,7 @@ class HubCommand extends Command
         $player->teleport($player->getServer()->getWorldManager()->getDefaultWorld()->getSafeSpawn());
         $player->getInventory()->clearALL();
         $player->getArmorInventory()->clearALL();
+        $player->sendMessage(str_replace(["{player}"], [$player->getName()], $this->plugin->getConfig()->get("Hub-Message")));
 
         $item1 = VanillaBlocks::ENDER_CHEST()->asItem();
         $item1->setCustomName("§r§bCosmetics§l");
